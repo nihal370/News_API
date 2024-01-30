@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="imp-nav container box">
+        <a href="#" onclick="reload()" class="logo">
+          <img
+            src="https://assets.coingecko.com/coins/images/4380/large/download.png?1696504978"
+            alt="comp-logo"
+          />
+        </a>
+
+        <div class="nav-links">
+          <ul class="box">
+            <li class="hov-link nv-itm" id="Andhra" onclick="nav_trans('Andhra')">States</li>
+            <li class="hov-link nv-itm" id="stock" onclick="nav_trans('stock')">Stocks</li>
+            <li class="hov-link nv-itm" id="Politics" onclick="nav_trans('Politics')">Politics</li>
+          </ul>
+        </div>
+        <div class="search-bar box">
+          <input id="searchtxt" type="text" class="inp-box" placeholder="2024 Elections" />
+          <button id="searchbtn"class="src-butn">Search</button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="card-container container box">
+        
+      </div>
+    </main>
+    <template id="card-template" >
+      <div class="card">
+        <div class="card-header">
+          <img src="https://via.placeholder.com/400x200" id="news-img" alt="news-img" />
+        </div>
+        <div class="card-content">
+          <h1 id="news-title">This is Title</h1>
+          <h5 class="news-src" id="news-src" ">End Gadget 20/08/24</h5>
+          <p class="news-dsc" id="news-dsc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime explicabo itaque deleniti aperiam minima dolorem mollitia voluptatum temporibus ipsa dicta accusamus, vitae optio, quis fuga.
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
